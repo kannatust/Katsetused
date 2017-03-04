@@ -13,7 +13,6 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.text.*;
 import java.lang.*;
-import java.net.*;
 
 /**
  * Created by anna on /2401/17.
@@ -52,7 +51,7 @@ public class KelderMain extends Application {
 
         //Button 3
         Button veiniListBtn = new Button("Olemasolevad veinid");
-        veiniListBtn.setOnAction(e -> window.setScene(scene4));
+        veiniListBtn.setOnAction(e -> window.setScene(scene));
 
         //Button4
         Button WishlistBtn = new Button("Wishlist");
@@ -95,55 +94,3 @@ public class KelderMain extends Application {
 
     }
 }
-
-
-
-/*
-    Button button;
-
-    public static void main(String[] args) {
-
-        launch(args);
-    }
-
-    @Override
-    public void start(Stage primaryStage) {
-        primaryStage.setTitle("Kelder");
-        button = new Button("Vaata keldrisse");
-
-        //This class will handle the button events
-        button.setOnAction(e -> System.out.println("siin on pime!"));
-
-        StackPane layout = new StackPane();
-        layout.getChildren().add(button);
-        Scene scene = new Scene(layout, 500, 250);
-        primaryStage.setScene(scene);
-        primaryStage.show();
-
-    }
-
-}
-*/
-
-/* - see on gridpane tegemiseks
-GridPane grid = new GridPane();
-grid.setPadding(new Insets(10, 10, 10, 10));
-grid.setMinSize(300, 300);
-grid.setVgap(5);
-grid.setHgap(5);
-
-Text username = new Text("Username:");
-grid.add(username, 0, 0);
-
-TextField text = new TextField();
-text.setPrefColumnCount(10);
-grid.add(text, 1, 0);
-
-Text password = new Text("Password:");
-grid.add(password, 0, 1);
-
-TextField text2 = new TextField();
-text2.setPrefColumnCount(10);
-grid.add(text2, 1, 1);
-grid.setStyle("-fx-background-color: #D8BFD8;");
- */
